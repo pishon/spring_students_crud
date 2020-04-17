@@ -1,0 +1,19 @@
+CREATE DATABASE student_db;
+
+USE student_db;
+
+CREATE TABLE students
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `age` DOUBLE,
+    `group` VARCHAR(45),
+    PRIMARY KEY (`id`)
+)
+    COLLATE='utf8_general_ci';
+
+INSERT INTO students (`name`,`age`,`group`)
+VALUES
+("Иванов Иван", 20, "ПМ-10"),
+("Сидоров Александр", 18, "АП-4"),
+("Петров Сергей", 22, "СТ-12");
